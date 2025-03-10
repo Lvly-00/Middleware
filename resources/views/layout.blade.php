@@ -11,6 +11,14 @@
 
 <body>
     <style>
+        html{
+            height: 100%;
+        }
+        body{
+            background: repeating-linear-gradient(60deg, white , black 20%, Grey 2px);
+            background-size: cover;
+            position: center;
+        }
         .container{
             box-sizing: border-box;
             margin: auto;
@@ -23,10 +31,36 @@
             align-self: center;
             padding: 3%;
             border-radius: 30px;
+            color: pink;
+            background-image: linear-gradient(90deg, rgba(81,81,121,1) 14%, rgba(2,0,36,1) 64%, rgba(21,94,108,1) 100%);
         }
+        .container-fluid{
+            padding-top: 0px;
+            background-image: linear-gradient(315deg, rgba(190,57,223,1) 9%, rgba(45,103,117,0.9976365546218487) 48%, rgba(58,25,157,0.9976365546218487) 81%);
+        }
+        .container-fluid form{
+            margin: 10px;
+            padding: 1px;
+        }
+        .container-fluid form button{
+            border-radius: 30px;
+        }
+        .navbar-brand{
+            color: White;
+            font-weight: bolder;
+            font-family: 'Ink Free';
 
+        }
+        .col-md-4{
+            margin-bottom: 10px;
+        }
         .inputCont{
             position:relative;
+        }
+        .dashboard{
+            background: linear-gradient(pink, blueviolet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;"
         }
         input{
             border-radius: 45px;
@@ -43,8 +77,8 @@
         }
         label{
             opacity:0;
-            color: blue;
-            top: -5px;
+            color: pink;
+            top: -7px;
             left: 3px;
             pointer-events: none;
             position:absolute;
