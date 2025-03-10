@@ -1,0 +1,26 @@
+.container{
+    box-sizing: border-box;
+    margin: auto;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    border-style: solid;
+    justify-content: space-around;
+    align-self: center;
+    padding: 3%;
+    border-radius: 30px;
+}
+input{
+    padding: 5%;
+    border-radius: 45px;
+    margin: 1px;
+    width: 50%;
+}
+label{
+    display:none;
+}
+form button{
+    border-radius: 30px;
+    padding: 3%;
+}

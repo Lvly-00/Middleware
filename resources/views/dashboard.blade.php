@@ -1,10 +1,26 @@
-@extends('layout')
-@section('title', 'Login')
-@include('navbar')
-
-@section('content')
-    <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{asset('Style/style.css')}}">
+    <script src="{{asset('JS/script.js')}}" defer></script>
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="container">
         <h1>Dashboard</h1>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">Navbar</a>
+                <form action="{{ route('logout') }}" method="POST" class="d-flex" >
+                    @csrf
+                    <button class="btn btn-outline-danger">Logout</button>
+                </form>
+            </div>
+        </nav>
+
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
@@ -32,6 +48,5 @@
             </div>
         </div>
     </div>
-
-
-@endsection
+</body>
+</html>
