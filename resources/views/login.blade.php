@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 @extends('layout')
 @section('title', 'Login')
