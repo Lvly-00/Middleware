@@ -37,7 +37,12 @@ class AuthController extends Controller
             return redirect()->intended('dashboard')->with('success', 'You are logged in!');
         }
         return back()->withErrors([
+<<<<<<< HEAD
             'email' => 'The provided credentials do not match our records.',
+=======
+            'email' => 'The provided email do not match our records.',
+            'password' => 'The provided password do not match our records.',
+>>>>>>> 1d753ff69f1a9e556002690f1f78256f8dac0772
         ]);
     }
 
